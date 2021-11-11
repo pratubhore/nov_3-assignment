@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prompt Assignment</title>
+</head>
+
+
+
+
+<body>
+    
+    <h1>Prompt Assignment</h1>
+    
+    <div id="mainwrapper">
+        <div id="container">
+            <input type="text" id="box">
+            
+            <input type="text" id="box" placeholder="Click on Enter Name Button"><br><br>
+            
+            <button id="enternamebtn" onclick="enterName()">Enter Name</button>
+           
+            <button id="clearbtn" onclick="clearInput()">Clear</button>
+        </div>
+    </div>
+
+
+
+   
+    <script>
+        let name = prompt("Enter Your Name","pratu matkar");
+        document.getElementById('box').value = name;
+        console.log(name);
+        
+        function enterName() {
+            let name = prompt("Enter Your Name",);
+            document.getElementById('box').value = name;
+        }
+
+         
+        function clearInput(){
+            document.getElementById('box').value = "";
+        }
+
+    </script>
+
+</body>
+ 
